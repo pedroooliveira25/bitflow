@@ -1,128 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flowbit</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      height: 100vh;
-      color: white;
-      overflow: hidden;
-    }
-
-    
-    .video-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -2;
-    }
-
-    .video-bg video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-  
-    .overlay {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, rgba(0,0,0,0.4), );
-      z-index: -1;
-    }
-
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-  
-    h1 {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 1.5;
-
-      background: linear-gradient(90deg,#fff,#cce5fe, #c2ccff, #7a22ee, #deffec);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-   
-    p {
-      font-size: 20px;
-      opacity: 0.7;
-      margin-top: 20px;
-      max-width: 600px;
-      color:#fff;
-    }
-
-   
-    .btn {
-  margin-top: 30px;
-  padding: 14px 32px;
-
-  border: 1px solid white;
-  background: transparent;
-  color: white;
-
-  border-radius: 2px; 
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: white;
-  color: black;
-}
-
-  </style>
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/header.css">
 </head>
-
 <body>
-
-  <div class="video-bg">
-    <video autoplay muted loop playsinline>
-      <source src="video/videp=bg.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="overlay"></div>
-
-  <div class="hero">
+    <main>
+        <header>
+            <nav>
+            <strong>FlowBit</strong>
+            <ul> 
+                <li><a href="Soluções"></a></li>
+                <li><a href="Ferramentas"></a></li>
+                <li><a href="Suporte"></a></li>
+                <li><a href="Planos"></a></li>
+            </ul>
+            <div class="nav-auth">
+                <button class="btn-login"></button>
+            </div>
+            </nav>
+        </header>
+    </main>
     
-
-    <h1>
-      Resultados reais, sem esforço <br>
-    </h1>
-
-    <p>
-      Automação inteligente para negócios que querem crescer de verdade.
-    </p>
-
-    <button class="btn">Flow-bit</button>
-
-  </div>
-
 </body>
 </html>

@@ -1,0 +1,44 @@
+header nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav strong {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+header ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+header ul li a:hover {
+    color:#ffffff;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-login{
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
