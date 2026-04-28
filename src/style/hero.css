@@ -6,11 +6,9 @@ main {
 
     background:
         radial-gradient(circle at 15% 30%, rgba(93, 58, 255, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 85% 70%, rgba(255, 45, 149, 0.12) 0% transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(255, 45, 149, 0.12) 0%, transparent 40%),
         radial-gradient(circle at 50% 50%, rgba(45, 150, 255, 0.05) 0%, transparent 60%),
-        linear-gradient(180deg, #020203 0%, #0a0a1a 100%),
         linear-gradient(180deg, #020203 0%, #0a0a1a 100%);
-
 }
 
 .hero-content {

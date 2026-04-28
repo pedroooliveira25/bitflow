@@ -17,10 +17,11 @@ header nav strong {
     letter-spacing: -0.5px;
 }
 
-header ul {
+header ul { 
     display: flex;
     list-style: none;
     gap: 32px;
+    cursor: pointer;
 }
 
 header ul li a {
@@ -28,6 +29,7 @@ header ul li a {
     text-decoration: none;
     font-size: 14px;
     transition: color 0.2s;
+    
 }
 
 header ul li a:hover {
