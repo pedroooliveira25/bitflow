@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="src/style/header.css">
     <link rel="stylesheet" href="src/style/hero.css">
     <link rel="stylesheet" href="src/style/label.css">
+   
 </head>
 
 <body>
+    <video autoplay muted loop playsinline id="bg-video" src="src/assets/video/115427-704729730.mp4"></video>
+
     <main>
         <header>
             <nav>
@@ -39,7 +42,9 @@
             <p>Economize com ofertas encontradas por IA em um clique</p>
 
             <form>
-                <textarea placeholder="Procure ofertas do seu produto favorito"></textarea>
+                <div class="input-box">
+                    <textarea id="text" placeholder=""></textarea>
+                </div>
 
                 <div class="form-footer">
                     <div class="footer-left">
@@ -50,6 +55,8 @@
             </form>
         </section>
     </main>
+
+    <script src="src/components/Hero/label.js"></script>
 
 </body>
 
