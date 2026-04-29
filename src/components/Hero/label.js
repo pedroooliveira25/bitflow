@@ -1,6 +1,7 @@
 const arrayText = [
     "Máquina de lavar",
-    "Iphone 17 mais barato!"
+    "Iphone 17 barato!",
+    "Carros até 30 mil"
 ];
 
 const writeTime = 100;
@@ -10,11 +11,16 @@ const pauseTime = 1000;
 let indexSentence = 0;
 let indexChar = 0;
 
+let isUserTyping = false;
+
 const element = document.querySelector("#text");
 
 function writeText() {
+
+    if (isUserTyping) return;
+
     if (indexChar <= arrayText[indexSentence].length) {
-        element.textContent = arrayText[indexSentence].substring(0, indexChar);
+        element.placeholder = arrayText[indexSentence].substring(0, indexChar);
         indexChar++;
         setTimeout(writeText, writeTime);
     } else {
@@ -23,21 +29,30 @@ function writeText() {
 }
 
 function removeText() {
+
+    if (isUserTyping) return;
+
     if (indexChar > 0) {
-        element.textContent = arrayText[indexSentence].substring(0, indexChar);
+        element.placeholder = arrayText[indexSentence].substring(0, indexChar);
         indexChar--;
         setTimeout(removeText, removeTime);
     } else {
-        indexSentence++;
-
-        if (indexSentence >= arrayText.length) {
-            indexSentence = 0;
-        }
-
+        indexSentence = (indexSentence + 1) % arrayText.length;
         indexChar = 0;
-
         setTimeout(writeText, pauseTime);
     }
 }
+
+
+element.addEventListener("input", () => {
+    isUserTyping = true;
+});
+
+
+element.addEventListener("blur", () => {
+    isUserTyping = false;
+    writeText();
+});
+
 
 writeText();

@@ -33,16 +33,3 @@ main {
     object-fit: cover;
     z-index: 1;
 }
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-
-    background:
-        radial-gradient(circle at 15% 30%, rgba(93, 58, 255, 0.25), transparent 40%),
-        radial-gradient(circle at 85% 70%, rgba(255, 45, 149, 0.18), transparent 45%),
-        linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
-
-    z-index: -1;
-}
